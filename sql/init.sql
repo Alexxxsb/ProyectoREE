@@ -1,0 +1,17 @@
+DROP DATABASE IF EXISTS ree_db;
+DROP USER IF EXISTS proyectoree;
+
+CREATE USER proyectoree WITH PASSWORD 'REE2026';
+CREATE DATABASE ree_db;
+GRANT ALL PRIVILEGES ON DATABASE ree_db TO proyectoree;
+
+\c ree_db
+
+ALTER SCHEMA public OWNER TO proyectoree;
+
+CREATE TABLE generacion (
+    id SERIAL PRIMARY KEY,
+    fecha TIMESTAMP NOT NULL,
+    tipo TEXT NOT NULL,
+    valor NUMERIC NOT NULL
+);

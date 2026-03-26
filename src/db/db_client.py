@@ -5,9 +5,9 @@ import psycopg2
 
 def get_connection():
     return psycopg2.connect(
-        dbname="ree",
-        user="postgres",
-        password="tu_password",
+        dbname="ree_db",
+        user="proyectoree",
+        password="REE2026",
         host="localhost",
         port="5432"
     )
