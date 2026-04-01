@@ -6,11 +6,19 @@
         "values": [
           {
             "datetime": "2023-01-01T00:00:00+00:00",
-            "value": 100
+            "value": -50
           },
           {
             "datetime": "2023-01-01T01:00:00+00:00",
-            "value": 120
+            "value": 999
+          },
+          {
+            "datetime": "null",
+            "value": 300
+          },
+          {
+            "datetime": "fecha_mal",
+            "value": 100
           }
         ]
       }
